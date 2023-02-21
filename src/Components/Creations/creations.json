@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Deep earth",
+        "image": "./images/desktop/image-deep-earth.jpg",
+        "image_mobile": "./images/mobile/image-deep-earth.jpg"
+    },
+    {
+        "name": "Night arcade",
+        "image": "./images/desktop/image-night-arcade.jpg",
+        "image_mobile": "./images/mobile/image-night-arcade.jpg"
+    },
+    {
+        "name": "Soccer team",
+        "image": "./images/desktop/image-soccer-team.jpg",
+        "image_mobile": "./images/mobile/image-soccer-team.jpg"
+    },
+    {
+        "name": "the Grid",
+        "image": "./images/desktop/image-grid.jpg",
+        "image_mobile": "./images/mobile/image-grid.jpg"
+    },
+    {
+        "name": "From above",
+        "image": "./images/desktop/image-from-above.jpg",
+        "image_mobile": "./images/mobile/image-from-above.jpg"
+    },
+    {
+        "name": "Pocket borealis",
+        "image": "./images/desktop/image-pocket-borealis.jpg",
+        "image_mobile": "./images/mobile/image-pocket-borealis.jpg"
+    },
+    {
+        "name": "the Curiosity",
+        "image": "./images/desktop/image-curiosity.jpg",
+        "image_mobile": "./images/mobile/image-curiosity.jpg"
+    },
+    {
+        "name": "Make it fisheye",
+        "image": "./images/desktop/image-fisheye.jpg",
+        "image_mobile": "./images/mobile/image-fisheye.jpg"
+    }
+] 

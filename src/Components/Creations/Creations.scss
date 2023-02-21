@@ -1,0 +1,219 @@
+@import "../../styles/global.scss";
+
+.creations {
+    height: auto;
+    .creations__container {
+        max-width: 1950px;
+        margin: 50px auto;
+        height: 100%;
+        width: 100%;
+        .creations__container-header { 
+            display: flex;
+            padding: 50px 50px;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 80px;
+            
+            .creations__container-title {
+                font-family: $--josefin-font;
+                font-weight: 100;
+                text-transform: uppercase;
+                font-size: 6rem;
+                margin: 0;
+                transform: translateX(10px);
+
+                @media screen {
+                    @media (max-width: 1150px) {
+                        margin: auto;
+                    }
+                }
+            }
+            .creations__container-more {
+                border: 2px solid $--black;
+                padding: 10px;
+                width: 150px;
+                text-align: center;
+
+                font-size: 2rem;
+                font-family: $--josefin-font;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+
+                transform: translateX(-10px);
+
+                &:hover {
+                    background-color: $--black;
+                    color: $--white;
+                }
+                &:active {
+                    transform: translate(-10px, 2px);
+                }
+
+                @media screen {
+                    @media (max-width: 1150px) {
+                        display: none;
+                    }
+                }
+            }
+
+            @media screen {
+                @media (max-width: 1150px) {
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                }
+            }
+        }
+
+        .creations__container-content {
+            padding: 50px 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 30px 1%;
+
+            .image__box {
+                width: 23%;
+                min-width: 100px;
+                position: relative;
+                margin: 0 auto;
+                color: $--white;
+                cursor: pointer;
+
+                &::before {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    background-image: linear-gradient(to right top, #0000008c, transparent);
+                    z-index: 5;
+                    position: absolute;
+                }
+                &:hover::before {
+                    background-color: rgba($color: $--white, $alpha: .6);
+                }
+                &:hover {
+                    color: $--black;
+                }
+                .image__box-image {
+                    width: 100%;
+                }
+                .image__box-text {
+                    position: absolute;
+
+                    font-size: 4rem;
+                    font-weight: 100;
+                    font-family: $--josefin-font;
+                    text-transform: uppercase;
+                    
+                    margin-left: 40px;
+                    width: 180px;
+                    bottom: 0;
+
+                    z-index: 10;
+                    
+                }
+
+                @media screen {
+                    @media (max-width: 1150px) {
+                        display: none;
+                    }
+                }
+
+            }
+
+            .image__box-mobile {
+                display: none;
+                width: 90%;
+                min-width: 320px;
+                position: relative;
+                margin: 0 auto;
+                color: $--white;
+                cursor: pointer;
+
+                &::before {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    background-image: linear-gradient(to right top, #0000008c, transparent);
+                    z-index: 5;
+                    position: absolute;
+                }
+                &:hover::before {
+                    background-color: rgba($color: $--white, $alpha: .6);
+                }
+                &:hover {
+                    color: $--black;
+                }
+                .image__box-image {
+                    width: 100%;
+
+                    @media screen {
+                        @media (max-width: 1150px) {
+                            object-fit: contain;
+                            width: 100%;
+                        }
+                    }
+                }
+                .image__box-text {
+                    position: absolute;
+
+                    font-size: 5rem;
+                    font-weight: 100;
+                    font-family: $--josefin-font;
+                    text-transform: uppercase;
+                    
+                    margin-left: 40px;
+                    width: 180px;
+                    bottom: 0;
+
+                    z-index: 10;
+
+                    @media screen {
+                        @media (max-width: 768px) {
+                            font-size: 4rem;
+                        }
+                    }
+                    
+                }
+
+                @media screen {
+                    @media (max-width: 1150px) {
+                        display: block;
+                    }
+                }
+
+            }
+            @media screen {
+                @media (max-width: 1150px) {
+                    flex-direction: column;
+                    padding: 50px 10px;
+                    align-items: center;
+                }
+            }
+        }
+        .creations__container-more2 {
+            border: 2px solid $--black;
+            padding: 10px;
+            width: 150px;
+            text-align: center;
+            font-size: 2rem;
+            font-family: $--josefin-font;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-top: 50px;
+            display: none;
+        
+            &:hover {
+                background-color: $--black;
+                color: $--white;
+            }
+    
+            @media screen {
+                @media (max-width: 1150px) {
+                    display: block;
+                }
+            }
+        }
+    }
+}
